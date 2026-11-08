@@ -21,6 +21,8 @@
 
 #![warn(missing_docs)]
 
+pub mod path;
 pub mod rng;
 
+pub use path::{PathParams, Point};
 pub use rng::Rng;
