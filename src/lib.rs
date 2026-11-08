@@ -21,10 +21,12 @@
 
 #![warn(missing_docs)]
 
+pub mod line;
 pub mod path;
 pub mod profile;
 pub mod rng;
 
+pub use line::{Canvas, Pencil};
 pub use path::{PathParams, Point};
 pub use profile::{Grade, Profile};
 pub use rng::Rng;
