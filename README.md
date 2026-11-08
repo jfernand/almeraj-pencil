@@ -5,7 +5,7 @@ Isenberg, Amy A. Gooch and Richard Guy, *Automatically Mimicking Unique Hand-Dra
 (Computers & Graphics 2009; first published at CAe 2008), and of AlMeraj's MSc thesis *Mimicking
 Human-Drawn Pencil Lines* (University of Victoria, 2008).
 
-![A line in each grade from 2H to 8B, long and short; the three dashing schemes; a curve](images/lines.png)
+![A line in each grade from 2H to 8B, long and short; the three dashing schemes; a curve](https://raw.githubusercontent.com/jfernand/almeraj-pencil/main/images/lines.png)
 
 A line is a **path** and a **texture**, and every line is different:
 
@@ -61,11 +61,15 @@ assert_eq!(grey.len(), 300 * 80);
 
 ## In use
 
-Outlines over a watercolor tile from [Bestagon](https://github.com/jfernand/bestagon), with the
+Outlines over a watercolor tile from Bestagon, a hex puzzle game, with the
 watercolor painted by [curtis-watercolor](https://github.com/jfernand/curtis-watercolor): the hex and
 both sides of every path in 6B.
 
-![A hex tile with three brown watercolor strokes, outlined in pencil](images/pencil-tile.png)
+![A hex tile with three brown watercolor strokes, outlined in pencil](https://raw.githubusercontent.com/jfernand/almeraj-pencil/main/images/pencil-tile.png)
+
+## Papers
+
+Listed, with links, in [`docs/`](docs/README.md).
 
 ## Licence
 
