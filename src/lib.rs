@@ -22,7 +22,9 @@
 #![warn(missing_docs)]
 
 pub mod path;
+pub mod profile;
 pub mod rng;
 
 pub use path::{PathParams, Point};
+pub use profile::{Grade, Profile};
 pub use rng::Rng;
