@@ -18,15 +18,34 @@
 //!
 //! Every line is different, and the same seed always draws the same one. No dependencies.
 //!
+//! ```
+//! use almeraj_pencil::{Canvas, Grade, PathParams, Pencil, Rng, path};
+//!
+//! let mut canvas = Canvas::new(200, 60);
+//! let mut rng = Rng::new(7);
+//! let stroke = path::line([10.0, 30.0], [190.0, 30.0], &PathParams::default(), &mut rng);
+//! canvas.draw(&stroke, &Pencil::new(Grade::HB), 1.0, &mut rng);
+//! // Somewhere in column 100 the graphite fell.
+//! assert!((0..60).any(|y| canvas.tone[y * 200 + 100] < 0.9));
+//! ```
 
 #![warn(missing_docs)]
 
+pub mod dash;
 pub mod line;
 pub mod path;
 pub mod profile;
 pub mod rng;
 
+pub use dash::{Dashes, dashes};
 pub use line::{Canvas, Pencil};
 pub use path::{PathParams, Point};
 pub use profile::{Grade, Profile};
 pub use rng::Rng;
+
+/// The crate version, for caches keyed on how lines are drawn.
+pub const VERSION: &str = env!("CARGO_PKG_VERSION");
+
+#[cfg(doctest)]
+#[doc = include_str!("../README.md")]
+struct ReadmeDoctests;
