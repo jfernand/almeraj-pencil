@@ -1,0 +1,17 @@
+[package]
+name = "almeraj-pencil"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Hand-drawn pencil lines after AlMeraj et al., Automatically Mimicking Unique Hand-Drawn Pencil Lines (2009): human arm trajectories and co-occurrence pencil texture"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/jfernand/almeraj-pencil"
+readme = "README.md"
+keywords = ["pencil", "npr", "sketch", "hand-drawn", "graphite"]
+categories = ["graphics", "rendering"]
+include = ["src/**", "examples/**", "README.md", "LICENSE-*"]
+
+[dependencies]
+
+[dev-dependencies]
+png = "0.18"

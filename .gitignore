@@ -1,0 +1,6 @@
+/target
+/out
+Cargo.lock
+# The papers (docs/) are copyrighted: keep them out of the repository.
+/docs/
+/.idea/
